@@ -1,6 +1,8 @@
 cockroach-app
 =============
 
+The purpose of this repo is testing CockRoachDB 1.0 against PHP/Symfony/Doctrine.
+
 ```
 vagrant up
 vagrant ssh
