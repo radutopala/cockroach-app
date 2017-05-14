@@ -3,10 +3,10 @@
 # http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
     database_host: 127.0.0.1
-    database_port: ~
+    database_port: 26257
     database_name: symfony
     database_user: root
-    database_password: ~
+    database_password: null
     # You should uncomment this if you want to use pdo_sqlite
     #database_path: '%kernel.root_dir%/../var/data/data.sqlite'
 
