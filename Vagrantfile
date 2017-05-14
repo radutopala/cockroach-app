@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     config.vm.provision :shell, :inline => "echo Welcome to CockRoachApp VM"
 
     config.vm.define :dev do |_config|
-        _config.vm.box = "trisoft/cockroachapp-201705121750"
+        _config.vm.box = "trisoft/cockroachapp-201705140946"
 
         _config.vm.hostname = "cr"
 
@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
         _config.vm.provider :virtualbox do |vb, override|
             vb.customize ["modifyvm", :id, "--memory", 4096]
             vb.customize ["modifyvm", :id, "--cpus", "4"]
-            override.vm.box_url = "http://labs.io.trisoft.ro/box/cockroachapp-201705121750.box"
+            override.vm.box_url = "http://labs.io.trisoft.ro/box/cockroachapp-201705140946.box"
             override.vm.network :private_network, ip: "192.168.33.178"
         end
     end
