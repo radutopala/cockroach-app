@@ -8,6 +8,7 @@ vagrant up
 vagrant ssh
 cd /var/www
 composer install
+cockroach start --insecure --background
 ```
 
 This will trigger [issue #1](https://github.com/radutopala/cockroach-app/issues/1): 
