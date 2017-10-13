@@ -1,7 +1,7 @@
 cockroach-app
 =============
 
-The purpose of this repo is testing CockRoachDB 1.0 against PHP/Symfony/Doctrine.
+The purpose of this repo is testing CockRoachDB 1.1 against PHP/Symfony/Doctrine.
 
 ```
 vagrant up
@@ -11,13 +11,7 @@ composer install
 cockroach start --insecure --background
 ```
 
-This will trigger [issue #1](https://github.com/radutopala/cockroach-app/issues/1): 
-```
-bin/console doctrine:database:create -vvv
-```
-
-If you move to branch issue_1 and run:
+This will trigger [issue #3](https://github.com/radutopala/cockroach-app/issues/3): 
 ```
 bin/console doctrine:schema:update -vvv
 ```
-will trigger [issue #2](https://github.com/radutopala/cockroach-app/issues/2).
